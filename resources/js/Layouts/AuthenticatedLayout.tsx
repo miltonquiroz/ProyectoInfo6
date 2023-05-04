@@ -56,10 +56,8 @@ export default function Authenticated({ user, header, children }: PropsWithChild
                                     </Dropdown.Trigger>
 
                                     <Dropdown.Content>
-                                        <Dropdown.Link href={route('profile.edit')}>Profile</Dropdown.Link>
-                                        <Dropdown.Link href={route('logout')} method="post" as="button">
-                                            Log Out
-                                        </Dropdown.Link>
+                                        <Dropdown.Link href={route('profile.edit')}>Perfil</Dropdown.Link>
+                                        <Dropdown.Link href={route('logout')} method="post" as="button">Salir</Dropdown.Link>
                                     </Dropdown.Content>
                                 </Dropdown>
                             </div>
