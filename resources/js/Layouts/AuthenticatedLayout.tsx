@@ -23,11 +23,10 @@ export default function Authenticated({ user, header, children }: PropsWithChild
 
                             <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
-                                    Dashboard
+                                    Info 6
                                 </NavLink>
                             </div>
                         </div>
-
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
                             <div className="ml-3 relative">
                                 <Dropdown>
@@ -107,7 +106,7 @@ export default function Authenticated({ user, header, children }: PropsWithChild
                         <div className="mt-3 space-y-1">
                             <ResponsiveNavLink href={route('profile.edit')}>Profile</ResponsiveNavLink>
                             <ResponsiveNavLink method="post" href={route('logout')} as="button">
-                                Log Out
+                                Salir
                             </ResponsiveNavLink>
                         </div>
                     </div>
